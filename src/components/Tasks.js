@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import SigleTask from './SingleTask'
+import PropTypes from 'prop-types';
+
+import SigleTask from './SingleTask';
 
 class Tasks extends Component {
 
@@ -9,6 +11,10 @@ class Tasks extends Component {
             )
         );
     }
+}
+
+Tasks.propTypes = {
+    taskData: PropTypes.array.isRequired
 }
 
 export default Tasks;
