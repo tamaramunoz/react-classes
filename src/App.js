@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './index.css'
 
 import tasks from './sample/task.json';
-import Tasks from './components/Tasks'
+
+// Components
+import Tasks from './components/Tasks';
+import Form from './components/Form';
 
 class App extends Component {
 
