@@ -11,7 +11,8 @@ class Tasks extends Component {
             <SigleTask 
                 item={item} 
                 key={item.id} 
-                deleteTask={this.props.deleteTask} 
+                deleteTask={this.props.deleteTask}
+                checkDone={this.props.checkDone}
             /> //separate the component in a new file called SingleTask
             )
         );

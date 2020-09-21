@@ -20,7 +20,7 @@ class SingleTask extends Component {
             <div style={this.StyleCompleted()}>
                 <h5>{item.title}</h5>
                 <p>{item.description}</p>
-                <input type="checkbox" />
+                <input type="checkbox" onChange={this.props.checkDone.bind(this, item.id)} />
                 <button style={btnDelete} onClick={this.props.deleteTask.bind(this, item.id)} >
                     x
                 </button>
