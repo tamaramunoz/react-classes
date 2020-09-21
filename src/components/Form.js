@@ -8,7 +8,7 @@ class Form extends Component {
     }
 
     handleSubmit = (e) => {
-        console.log(this.state)
+        this.props.addTask(this.state.title, this.state.description)
         e.preventDefault();
     }
 
@@ -20,7 +20,6 @@ class Form extends Component {
     }
 
     render() {
-
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
