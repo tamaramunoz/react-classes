@@ -7,7 +7,12 @@ class Tasks extends Component {
 
     render() {
         return (
-            this.props.taskData.map(item => <SigleTask item={item} key={item.id} /> //separate the component in a new file called SingleTask
+            this.props.taskData.map(item => 
+            <SigleTask 
+                item={item} 
+                key={item.id} 
+                deleteTask={this.props.deleteTask} 
+            /> //separate the component in a new file called SingleTask
             )
         );
     }

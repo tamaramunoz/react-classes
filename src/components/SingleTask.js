@@ -21,7 +21,7 @@ class SingleTask extends Component {
                 <h5>{item.title}</h5>
                 <p>{item.description}</p>
                 <input type="checkbox" />
-                <button style={btnDelete}>
+                <button style={btnDelete} onClick={this.props.deleteTask.bind(this, item.id)} >
                     x
                 </button>
             </div>

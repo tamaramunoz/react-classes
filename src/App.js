@@ -24,11 +24,20 @@ class App extends Component {
     })
   }
 
+  deleteTask = (id) => {
+    const deleting = this.state.taskData.filter(item => item.id !== id)
+    this.setState({taskData: deleting})
+  }
+
+  checkDone = () => {
+
+  }
+
   render() {
     return (
       <div>
         <Form addTask={this.addTask} />
-        <Tasks taskData={this.state.taskData} />
+        <Tasks taskData={this.state.taskData} deleteTask={this.deleteTask} />
       </div>)
   }
 
