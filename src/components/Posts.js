@@ -8,8 +8,7 @@ class Posts extends Component {
 
     componentDidMount = async() => {
         const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-        const dataPosts = await res.json();
-        console.log(dataPosts)
+        const dataPosts = await res.json()
         this.setState({posts: dataPosts})
     }
 
