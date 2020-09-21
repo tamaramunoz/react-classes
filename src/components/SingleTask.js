@@ -11,7 +11,6 @@ class SingleTask extends Component {
         }
     }
 
-
     render() {
 
         const { item } = this.props; //calling the props directly instead put this.props.item.title
